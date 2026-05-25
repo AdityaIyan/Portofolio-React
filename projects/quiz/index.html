@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz Responsif — HTML & CSS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <h1>Quiz Singkat</h1>
+      <p class="lead">Quiz responsif dibuat hanya dengan HTML dan CSS. Pilih jawaban lalu buka bagian "Kunci Jawaban" untuk memeriksa.</p>
+    </header>
+
+    <section class="quiz">
+
+      <article class="question">
+        <h2>1. Tag HTML untuk membuat tautan adalah...</h2>
+        <ul class="choices">
+          <li><label><input type="radio" name="q1"> &lt;div&gt;</label></li>
+          <li><label><input type="radio" name="q1"> &lt;span&gt;</label></li>
+          <li><label><input type="radio" name="q1"> &lt;a&gt;  (Benar)</label></li>
+          <li><label><input type="radio" name="q1"> &lt;p&gt;</label></li>
+        </ul>
+        <details class="answer"><summary>Kunci Jawaban</summary><p>Jawaban: &lt;a&gt; — digunakan untuk hyperlink.</p></details>
+      </article>
+
+      <article class="question">
+        <h2>2. Properti CSS untuk mengubah warna teks adalah...</h2>
+        <ul class="choices">
+          <li><label><input type="radio" name="q2"> background-color</label></li>
+          <li><label><input type="radio" name="q2"> color  (Benar)</label></li>
+          <li><label><input type="radio" name="q2"> font-size</label></li>
+          <li><label><input type="radio" name="q2"> border</label></li>
+        </ul>
+        <details class="answer"><summary>Kunci Jawaban</summary><p>Jawaban: <code>color</code> — mengatur warna teks elemen.</p></details>
+      </article>
+
+      <article class="question">
+        <h2>3. Elemen HTML yang semantik untuk judul utama adalah...</h2>
+        <ul class="choices">
+          <li><label><input type="radio" name="q3"> &lt;h1&gt;  (Benar)</label></li>
+          <li><label><input type="radio" name="q3"> &lt;header&gt;</label></li>
+          <li><label><input type="radio" name="q3"> &lt;section&gt;</label></li>
+          <li><label><input type="radio" name="q3"> &lt;div&gt;</label></li>
+        </ul>
+        <details class="answer"><summary>Kunci Jawaban</summary><p>Jawaban: &lt;h1&gt; — untuk judul utama halaman atau bagian penting.</p></details>
+      </article>
+
+      <article class="question">
+        <h2>4. Unit responsif yang merepresentasikan 1% dari lebar viewport adalah...</h2>
+        <ul class="choices">
+          <li><label><input type="radio" name="q4"> em</label></li>
+          <li><label><input type="radio" name="q4"> rem</label></li>
+          <li><label><input type="radio" name="q4"> vw  (Benar)</label></li>
+          <li><label><input type="radio" name="q4"> px</label></li>
+        </ul>
+        <details class="answer"><summary>Kunci Jawaban</summary><p>Jawaban: <code>1vw</code> adalah 1% dari lebar viewport.</p></details>
+      </article>
+
+      <article class="question">
+        <h2>5. Agar tata letak dua kolom pada layar besar dan satu kolom pada layar kecil, teknik yang umum digunakan adalah...</h2>
+        <ul class="choices">
+          <li><label><input type="radio" name="q5"> Table layout</label></li>
+          <li><label><input type="radio" name="q5"> Floats</label></li>
+          <li><label><input type="radio" name="q5"> CSS Grid / Flexbox  (Benar)</label></li>
+          <li><label><input type="radio" name="q5"> Inline elements</label></li>
+        </ul>
+        <details class="answer"><summary>Kunci Jawaban</summary><p>Jawaban: Menggunakan <code>Flexbox</code> atau <code>Grid</code> untuk tata letak responsif.</p></details>
+      </article>
+
+    </section>
+
+    <footer class="site-footer">
+      <p>Demo quiz — hanya HTML & CSS. Tidak ada penyimpanan skor.</p>
+      <a href="/" class="back">Kembali ke beranda</a>
+    </footer>
+  </main>
+</body>
+</html>

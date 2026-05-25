@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e3f2fd;
+  color: #424242;
+  font-family: "Calibre", "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: #1976d2;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #42a5f5;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e3f2fd;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #90caf9;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1976d2;
+}
+
+/* Custom utility classes */
+.gradient-text {
+  background: linear-gradient(135deg, #1976d2, #42a5f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nav-item {
+  @apply text-sm font-mono text-slate-400 hover:text-accent transition-colors duration-300;
+}
+
+.btn-primary {
+  @apply border border-accent text-accent px-6 py-3 rounded font-mono text-sm hover:bg-accent hover:bg-opacity-10 transition-all duration-300;
+}
+
+.section {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20;
+}
+
+.section-title {
+  @apply text-2xl sm:text-3xl font-bold text-slate-200 flex items-center gap-4 mb-12;
+}
+
+.section-title::before {
+  content: "";
+  @apply inline-block w-12 h-px bg-accent;
+}
+
+.section-title::after {
+  content: "";
+  @apply flex-1 h-px bg-slate-700 max-w-xs;
+}
+
+.line-number {
+  @apply text-xs font-mono text-slate-500 mr-4 select-none;
+}
