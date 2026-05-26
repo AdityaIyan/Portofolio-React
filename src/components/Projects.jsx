@@ -7,7 +7,7 @@ export default function Projects() {
       description:
         'medical chatbot yang membantu memberikan penjelasan dan rekomendasi awal terkait luka berdasarkan gambar dan beberapa pertanyaan sederhana. Menggunakan computer vision dan machine learning untuk analisis luka.',
       tags: ['Python', 'TensorFlow', 'FastAPI', 'React', 'OpenCV'],
-      image: '/public/projects/Wound_Treatment.png',
+      image: '/projects/Wound_Treatment.png',
       link: 'https://github.com/AdityaIyan/Wound-Treatment-Recommendation.git',
       github: 'https://github.com/AdityaIyan/Wound-Treatment-Recommendation.git',
       featured: true,
@@ -17,7 +17,7 @@ export default function Projects() {
       description:
         'Platform e-commerce premium untuk eyewear dengan katalog produk lengkap, shopping cart, dan fitur filtering produk. Dibangun dengan Next.js untuk frontend yang cepat dan responsif, Nest.js untuk backend yang scalable, Supabase sebagai database, dan Tailwind CSS untuk desain modern. Project ini menampilkan kemampuan saya dalam membangun aplikasi web full-stack yang kompleks dan user-friendly.',
       tags: ['Next.js', 'Nest.js', 'Supabase', 'Tailwind CSS'],
-      image: '/public/projects/Tokokocomoto.png',
+      image: '/projects/Tokokocomoto.png',
       link: 'https://tokokocomoto-frontend.vercel.app',
       github: 'https://github.com/AdityaIyan/TOKOKOCOMOTO---e-commerce-Website.git',
       featured: true,
@@ -27,7 +27,7 @@ export default function Projects() {
       description:
         'Game ludo multiplayer yang dapat dimainkan oleh beberapa pemain secara bersamaan melalui jaringan.',
       tags: ['python', 'socket programming', 'Tkinker GUI', 'Real-time Multiplayer'],
-      image: '/public/projects/Multiplayer-Ludo.png',
+      image: '/projects/Multiplayer-Ludo.png',
       link: 'https://github.com/AdityaIyan/Multiplayer-Ludo.git',
       github: 'https://github.com/AdityaIyan/Multiplayer-Ludo.git',
       featured: true,
