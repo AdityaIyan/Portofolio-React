@@ -5,8 +5,8 @@ export default function About() {
     'JavaScript (ES6+)',
     'TypeScript',
     'React',
-    'Node.js',
-    'Express',
+    'Nest.js',
+    'SQL',
     'Python',
     'SymmetricDS',
     'PostgreSQL',
@@ -52,7 +52,7 @@ export default function About() {
 
         {/* Image (from public/projects) */}
         <div className="hidden lg:flex items-center justify-center">
-          <img src="public/projects/foto_iyan.jpg" alt="Your Photo" className="w-70 h-70 rounded-lg object-cover shadow-md" />
+          <img src="/projects/foto_iyan.jpg" alt="Your Photo" className="w-70 h-70 rounded-lg object-cover shadow-md" />
         </div>
       </div>
     </section>
