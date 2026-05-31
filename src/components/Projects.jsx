@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Projects() {
+  const [showAll, setShowAll] = useState(false)
+
   const projects = [
     {
       title: 'RSBP Wound Chatbot',
@@ -50,12 +52,27 @@ export default function Projects() {
       featured: false,
     },
     {
-      title: 'Web Quiz (HTML & CSS)',
-      description: 'Quiz interaktif responsif yang hanya menggunakan HTML dan CSS. Setiap soal menampilkan pilihan jawaban dan bagian untuk menampilkan kunci jawaban tanpa JavaScript.',
+      title: 'Web Quiz ',
+      description: 'Membangun aplikasi kuis berbasis web yang memungkinkan pengguna mengerjakan soal secara interaktif dengan tampilan yang responsif dan mudah digunakan. Sistem menyediakan fitur penilaian otomatis, navigasi soal, serta perhitungan skor secara real-time untuk meningkatkan pengalaman belajar pengguna.',
       tags: ['React', 'CSS', 'Responsive'],
       link: 'https://github.com/AdityaIyan/iyanweb.git',
       github: 'https://github.com/AdityaIyan/iyanweb.git',
     },
+    {
+      title: 'Demis shoes e-commerce Website',
+      description: 'Membangun website e-commerce untuk penjualan produk sepatu yang menyediakan fitur katalog produk, pencarian, manajemen stok, keranjang belanja, serta proses pemesanan secara online. Sistem dirancang untuk mempermudah pengelolaan produk dan meningkatkan pengalaman belanja pelanggan melalui antarmuka yang sederhana dan mudah digunakan.',      tags: ['React', 'CSS', 'Responsive'],
+      tags: ['PHP', 'javascript', 'HTML', 'CSS', 'MongoDB'],
+      link: '',
+      github: '',
+    },
+    {
+      title: 'Penalty Kick Games',
+      description: 'Mengembangkan permainan simulasi tendangan penalti dengan mekanisme gameplay yang interaktif dan responsif. Pemain dapat mengontrol arah serta kekuatan tendangan untuk mencetak gol, sementara sistem permainan menangani perhitungan skor, animasi, dan interaksi objek dalam lingkungan permainan 3D.',
+      tags: ['Unity', 'C#'],
+      tags: ['PHP', 'javascript', 'HTML', 'CSS', 'MongoDB'],
+      link: '',
+      github: '',
+    }
   ]
 
   const featuredProjects = projects.filter((p) => p.featured)
@@ -121,6 +138,7 @@ export default function Projects() {
       </div>
 
       {/* Other Notable Projects */}
+      {showAll && (
       <div className="mb-12">
         <h3 className="text-slate-200 text-xl sm:text-2xl font-bold mb-10">
           Project Lainnya
@@ -168,11 +186,15 @@ export default function Projects() {
           ))}
         </div>
       </div>
+      )}
 
       <div className="text-center mt-12">
-        <a href="#" className="btn-primary">
-          Lihat Selengkapnya
-        </a>
+        <button 
+          onClick={() => setShowAll(!showAll)}
+          className="btn-primary"
+        >
+          {showAll ? 'Sembunyikan' : 'Lihat Selengkapnya'}
+        </button>
       </div>
     </section>
   )

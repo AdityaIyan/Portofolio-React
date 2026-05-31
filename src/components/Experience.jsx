@@ -15,7 +15,7 @@ export default function Experience() {
     },
     {
       company: 'EdTech Startup (Try-Out Platform)',
-      position: 'Contributor / Backend Developer',
+      position: 'Frontend Developer',
       period: 'Project-based',
       achievements: [
         'Collaborated on a paid web-based try-out platform for high-school students with a Golang backend and React frontend (Oracle used in the stack as specified).',

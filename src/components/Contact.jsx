@@ -24,6 +24,15 @@ export default function Contact() {
           Say Hello
         </a>
 
+        <a
+          href="/projects/Aditya%20FIeansyah%20Putra%20Pratama-resume.pdf"
+          className="inline-block btn-primary text-lg px- py-3 ml-4 hover:bg-accent hover:bg-opacity-20"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume
+        </a>
+
         {/* Social Links */}
         <div className="flex justify-center gap-8 mt-16">
           <a

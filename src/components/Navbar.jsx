@@ -30,7 +30,7 @@ export default function Navbar() {
                 {item.name}
               </a>
             ))}
-            <a href="/projects/Aditya%20FIeansyah%20Putra%20Pratama-resume.pdf" className="btn-primary" target="_blank" rel="noopener noreferrer">
+            <a href="#contact" className="btn-primary">
               Get In Touch
             </a>
           </div>
@@ -59,7 +59,7 @@ export default function Navbar() {
                 {item.name}
               </a>
             ))}
-            <a href="/projects/Aditya%20FIeansyah%20Putra%20Pratama-resume.pdf" className="btn-primary block text-center" target="_blank" rel="noopener noreferrer">
+            <a href="#contact" className="btn-primary block text-center" onClick={() => setIsMenuOpen(false)}>
               Get In Touch
             </a>
           </div>
